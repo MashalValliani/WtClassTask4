@@ -1,0 +1,180 @@
+<! doctype html>
+<html>
+	<head>
+		<title> Flex Box Image Gallery
+		</title>
+		<style>
+			* 
+				{
+					box-sizing: border-box;
+					margin:0px;
+					padding:0px;
+				}
+			.header
+				{
+					display:inline-flex;
+					flex-wrap: wrap;
+				}
+			.header img
+				{	margin-left:10px;
+					height:90;
+					width:100;
+				}
+			.header p
+				{
+				margin-top:30px;
+				font-size:40px;
+				font-family:"monotype corsiva";
+				font-weight:bold;
+				font-stretch:expanded;
+				Color: #cc0000;
+				}
+			.nav
+				{
+					background-color:#cc0000;
+					padding:3px;
+				}
+			.nav a
+				{
+					color:white;
+					text-decoration:none;
+					font-family:"times new roman";
+					margin:35px;
+				}
+			.nav a:hover
+				{
+					text-weight:bold;
+					text-decoration:underline;
+				}
+			.footer
+				{
+					display: flex;
+					justify-content:flex-start;
+
+					background-color:#cc0000;
+					padding:8px;
+					
+				}
+			.footer>a
+				{
+					text-decoration:none;
+					color:white;	
+				}
+			.socialMedia 
+				{
+				display:inline-flex;
+								
+				}
+			.footer .socialMedia img
+				{
+					border-radius:30%;
+				}
+			.facebook img:hover
+				{
+					height:40px;
+					width:40px;
+				}
+			.twitter img:hover
+				{
+					height:40px;
+					width:40px;
+				}	
+			.row {
+			background-color: #d9d9d9;
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0 4px;
+			}
+
+			/* Create four equal columns that sits next to each other */
+			.column {
+				flex: 25%;
+				max-width: 25%;
+			}
+
+			.column img {
+				margin-top: 8px;
+				vertical-align: middle;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media (max-width: 800px) {
+				.column {
+					flex: 50%;
+					max-width: 50%;
+				}
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media (max-width: 600px) {
+				.column {
+					flex: 100%;
+					max-width: 100%;
+				}
+			}
+				/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+			.text 
+				{
+				  color: white;
+				  font-size: 20px;
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  transform: translate(-50%, -50%);
+				  text-align: center;
+				}
+			
+		</style>
+	</head>
+	<body>
+	<div class="header">
+		<img src="makeupImages/logo.png">
+		<p>&nbspMakeup Gallery</p>
+		<br><br>
+	</div>
+	<div class="nav">
+		<a href="#Home">Home</a>
+		
+		<a href="#About Us?">About Us</a>
+		
+		<a href="#Customer Care">Customer Care</a>
+	
+		<a href="#Track My Order">Track My Order</a>
+	</div>
+	<br>
+	<br>
+	<div class="row"> 
+  <div class="column">
+    <img src="makeupImages/m1.jpg" style="width:98%; ; height:51%" class="1">
+    <div class="row" >
+	<img src="makeupImages/m2.jpg" style="width:39%">
+	<img src="makeupImages/m3.jpg" style="width:59%">
+	</div>
+  </div>
+  <div class="column">
+    <img src="makeupImages/m4.jpg" style="width:98%; height:96%">
+  </div>
+  <div class="column">
+    <img src="makeupImages/m5.jpg" style="width:59%; height:40%">
+    <img src="makeupImages/m6.jpg" style="width:36% ; height:40%">  
+	<div class="row" >
+	<img src="makeupImages/m7.jpg" style="width:98%;  height:55%">
+	</div>
+  </div>
+  <div class="column">
+    <img src="makeupImages/m8.jpg" style="width:99%; height:96%">
+  </div>
+</div>
+<br>
+<br>
+	
+	<div class="footer">
+	&nbsp <a href="Copyright&copy; All rights Reserved 2018" >Copyright&copy; All rights Reserved 2018</a> &nbsp &nbsp &nbsp 
+	<div class="socialMedia">
+			<div class="facebook"><a href="https://www.facebook.com/"><img src="makeupImages/facebook.png" width="25px" height="25px" ></a>&nbsp </div>
+			<div class="twitter"><a href="https://twitter.com/login?lang=en"><img src="makeupImages/twitter.png" width="25px" height="25px" ></a>&nbsp </div>
+			
+		</div>
+	</div>
+	</body>
+</html>
